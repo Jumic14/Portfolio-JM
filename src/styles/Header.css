@@ -1,0 +1,28 @@
+.header{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px 100px;
+}
+.header-logo {
+  width: 210px;
+  height: auto;
+}
+.header-nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-inline-start: 50px;;
+}
+.header-nav li {
+  list-style-type: none;
+  color:#FF6060;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 34px;
+  margin-inline-start: 50px;
+}
+.header-nav li a {
+  text-decoration: none;
+  color:#FF6060;
+}
