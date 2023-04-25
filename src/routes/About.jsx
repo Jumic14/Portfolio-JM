@@ -1,5 +1,5 @@
 import Banner from './../components/Banner'
-
+import Collapse from '../components/Collapse'
 
 function About() {
   return (
@@ -7,7 +7,8 @@ function About() {
     <aside className='banner-about'>
       <Banner />
     </aside>
-    <article className='about'>
+    <article className='about-article'>
+      <Collapse />
     </article>
   </section>
   );
