@@ -1,12 +1,11 @@
 import { useRouteError } from "react-router-dom";
 import { Link } from 'react-router-dom' 
-import Header from './../components/Header'
-import Footer from './../components/Footer'
+import Header from '../components/HeaderChild'
+import Footer from '../components/FooterChild'
 
 export default function ErrorPage() {
   const error = useRouteError();
   console.error(error);
-
   return (
     <div id="error-page">
       <Header />

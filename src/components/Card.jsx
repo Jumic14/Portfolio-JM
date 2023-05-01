@@ -1,19 +1,21 @@
-import accommodations from './../components/Accomodations'
 import '../styles/Card.css'
+import { Link } from 'react-router-dom' 
 
-function Card() {
+export default function Card({props}) {
     return (
         <div className='cards-container'>
-          
-                 {accommodations.map((accomodation) => (
-                     <div className='card' key={accomodation.id}>
-                        <img src={accomodation.cover} className="card-img" alt="card img" />
-                         <span className='card-text'>{accomodation.title}</span>
-                        </div>
-        ))}
            
+            {props.map((prop) => (
+                <div className='card' key={prop.id} >
+                     { <Link to={"/Accomodation/"+prop.id}> 
+                     <img src={prop.cover} className="card-img" alt="card img" />
+                    <span className='card-text'>{prop.title}</span>
+                    </Link> }
+                   
+                </div>
+            ))}
+            
         </div>
     )
-  }
-  
-  export default Card
+
+}

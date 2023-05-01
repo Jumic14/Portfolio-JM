@@ -1,17 +1,16 @@
 import Banner from './../components/Banner'
 import Collapse from '../components/Collapse'
+import abouts from '../components/Abouts'
 
-function About() {
+export default function About() {
   return (
     <section>
     <aside className='banner-about'>
       <Banner />
     </aside>
     <article className='about-article'>
-      <Collapse />
+      <Collapse props={abouts}/>
     </article>
   </section>
   );
 }
-
-export default About;

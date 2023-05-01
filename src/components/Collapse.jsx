@@ -1,19 +1,30 @@
-import abouts from './Abouts'
 import '../styles/Collapse.css'
+import React, { useState } from 'react';
 
-function Collapse() {
-    return (
-        <div className='abouts'>
-          
-                 {abouts.map((about, index) => (
-                     <div className='about-container' key={`${about}-${index}`}>
-                         <span className='about-title'>{about.title}</span>
-                         <span className='about-text'>{about.description}</span>
-                        </div>
-        ))}
-           
-        </div>
-    )
+export default function Collapse({props}) {
+  const [toggle, setToggle] = React.useState(false);
+  function toggleFunction(id) {
+    setToggle({
+      ...toggle,
+      [id]: !toggle[id],
+    });
   }
-  
-  export default Collapse
+  return (
+    <div className="abouts-container">
+      <div className="abouts-list">
+        {props.map((prop) => (
+          <li key={prop.id} className="about">
+            <button className='about-btn' onClick={() => toggleFunction(prop.id)}>
+              {prop.title}
+              <div className={'fa-solid fa-angle-up'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}></div>
+              <div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.id] ? 'block' : 'none' }}></div>
+            </button>
+            <span className={'about-text'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}>
+              {prop.content}
+            </span>
+          </li>
+        ))}
+      </div>
+    </div>
+  );
+}

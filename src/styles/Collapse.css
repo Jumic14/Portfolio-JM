@@ -4,21 +4,20 @@
     justify-content: center;
     align-items: center;    
 }
-.abouts {
+.abouts-list {
+list-style: none;
+}
+.abouts-container {
     margin: 0px 100px 200px 100px;
     width: 80%;
 }
-
-.about-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 0px;
-
+.about {
+    padding: 15px;
 }
-
-.about-title {
+.about-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: #FF6060;
     border-radius: 5px;
     padding-left: 3%;
@@ -26,9 +25,13 @@
     line-height: 34px;
     font-weight: 500;
     color: #FFFFFF;
-    width: 97%;
+    width: 100%;
+    border:none
 }
 
+.fa-solid {
+    padding-right: 3%;
+}
 .about-text {
     background: #F7F7F7;
     border-radius: 5px;
@@ -36,5 +39,4 @@
     font-size: 24px;
     line-height: 34px;
     color: #FF6060;
-    
 }

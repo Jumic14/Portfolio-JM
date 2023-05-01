@@ -1,8 +1,7 @@
-
 import logo from './../assets/images/logo-white.png';
 import '../styles/Footer.css'
 
-function Footer() {
+export default function Footer() {
     return (
         <div className="footer">
             <img src={logo} className="footer-logo" alt="logo" />
@@ -10,5 +9,3 @@ function Footer() {
         </div>
     )
 }
-
-export default Footer

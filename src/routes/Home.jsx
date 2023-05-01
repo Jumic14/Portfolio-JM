@@ -1,17 +1,16 @@
 import Banner from './../components/Banner'
 import Card from './../components/Card'
+import accommodations from './../components/Accomodations'
 
-function Home() {
+export default function Home() {
   return (
     <section>
       <aside className='banner-home'>
         <Banner />
       </aside>
       <article className='cards'>
-        <Card />
+        <Card props={accommodations}/>
       </article>
     </section>
   )
 }
-
-export default Home
