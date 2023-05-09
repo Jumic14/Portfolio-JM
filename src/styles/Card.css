@@ -1,46 +1,104 @@
-
+.cards {
+    margin: 50px 100px;
+    padding: 50px 2%;
+    background: #F7F7F7;
+    border-radius: 25px;
+  }
 .cards-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+    justify-items: center;
 }
 
 .card {
-    width: 300px;
-    height: 300px;
+    width: 85%;
+    height: 100%;
     border-radius: 10px;
-    margin-inline: 4%;
-    margin-block: 25px;
+
 }
 .card a{
     display: flex;
     position: relative;
     flex-direction: column;
     justify-content: end;
-
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 340px;
 }
 .card-text {
     display: flex;
+    align-items: end;
     position: absolute;
     flex-wrap: wrap;
-    z-index: 1;
     font-size: 18px;
     font-weight: 500;
     line-height: 26px;
     letter-spacing: 0em;
-    padding: 20px;
+
     color: white;
-    width: 70%;
-
+    width: 95%;
+    height: 95%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+    border-radius: 10px;
+    padding-left: 5%;
+    padding-bottom: 5%;
     }
-
 .card-img {
 
     border-radius: 10px;
     height: 100%;
-    object-fit: cover;
-    filter: brightness(70%);
 
+    background-size: cover;
+    background-position: center;
+
+}
+@media screen and (max-width: 900px) {
+    .cards-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 800px) {
+    .cards {
+        margin: 0px 80px;
+      }
+      .card a{
+        height: 355px;
+    }
+}
+@media screen and (max-width: 700px) {
+    .cards {
+        margin: 0px 60px;
+      }
+      .card a{
+        height: 315px;
+    }
+    .cards-container {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width: 600px) {
+    .cards {
+        margin: 0px 40px;
+      }
+      .card a{
+        height: 295px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .cards {
+        margin: 0px 30px;
+      }
+      .card a{
+        height: 270px;
+    }
+}
+@media screen and (max-width: 450px) {
+    .cards {
+        margin: 0px 20px;
+      }
+      .card a{
+        height: 255px;
+    }
 }

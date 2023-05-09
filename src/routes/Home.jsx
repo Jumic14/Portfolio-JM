@@ -1,6 +1,6 @@
 import Banner from './../components/Banner'
 import Card from './../components/Card'
-import accommodations from './../components/Accomodations'
+import datas from '../data/datas'
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
         <Banner />
       </aside>
       <article className='cards'>
-        <Card props={accommodations}/>
+        <Card props={datas}/>
       </article>
     </section>
   )

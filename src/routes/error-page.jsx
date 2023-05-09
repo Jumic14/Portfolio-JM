@@ -1,14 +1,8 @@
-import { useRouteError } from "react-router-dom";
 import { Link } from 'react-router-dom' 
-import Header from '../components/HeaderChild'
-import Footer from '../components/FooterChild'
 
 export default function ErrorPage() {
-  const error = useRouteError();
-  console.error(error);
   return (
     <div id="error-page">
-      <Header />
       <div className="error-number">
         404
         </div>
@@ -18,7 +12,6 @@ export default function ErrorPage() {
       <div className="error-link">
         { <Link to="/Home">Retourner sur la page d'accueil</Link> }
         </div>
-        <Footer />
     </div>
   );
 }

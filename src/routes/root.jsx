@@ -1,12 +1,12 @@
-import Header from '../components/HeaderChild'
-import Footer from '../components/FooterChild'
+import HeaderChild from '../components/HeaderChild'
+import FooterChild from '../components/FooterChild'
 import {Outlet} from "react-router-dom"
 
 export default function Root() {
     return (
       <>
         <header>
-            <Header />
+            <HeaderChild />
         </header>
         <main>
             <div id="detail">
@@ -14,7 +14,7 @@ export default function Root() {
             </div>
         </main>
         <footer>
-            <Footer />
+            <FooterChild />
         </footer>
       </>
     );

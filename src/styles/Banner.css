@@ -1,5 +1,3 @@
-
-
 .banner-container {
     margin: 50px 100px;
     position: relative;
@@ -9,9 +7,6 @@
     height: 223px;
     width: auto;
     border-radius: 25px;
-    
-
-
 }
 .banner-txt {
     position: absolute;
@@ -19,18 +14,72 @@
     z-index: 1;
     font-size: 48px;
     font-weight: 500;
-    line-height: 68px;
+    padding: 20px;
     letter-spacing: 0em;
     color: white;
 }
-
 .banner-img {
-
-   
-    height: 223px;
+    height: 100%;
     width: 100%;
     border-radius: 25px;
     object-fit: cover;
     filter: brightness(70%);
-
 }
+@media screen and (max-width: 800px) {
+    .banner-container {
+        margin: 40px 80px;
+    }
+    .banner-container.home {
+        height: 200px;
+    }
+    .banner-txt {
+        position: absolute;
+        align-self: center;
+        z-index: 1;
+        font-size: 48px;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .banner-container {
+        margin: 30px 60px;
+    }
+    .banner-container.home {
+        height: 180px;
+    }
+    .banner-txt {
+        font-size: 36px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .banner-container {
+        margin: 20px 40px;
+    }
+    .banner-container.home {
+        height: 158px;
+    }
+    .banner-txt {
+        font-size: 32px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .banner-container {
+        margin: 15px 30px;
+    }
+    .banner-container.home {
+        height: 135px;
+    }
+    .banner-txt {
+        font-size: 28px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .banner-container {
+        margin: 10px 20px;
+    }
+    .banner-container.home {
+        height: 111px;
+    }
+    .banner-txt {
+        font-size: 24px;
+    }
+  }

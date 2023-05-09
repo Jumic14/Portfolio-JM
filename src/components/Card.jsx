@@ -8,7 +8,8 @@ export default function Card({props}) {
             {props.map((prop) => (
                 <div className='card' key={prop.id} >
                      { <Link to={"/Accomodation/"+prop.id}> 
-                     <img src={prop.cover} className="card-img" alt="card img" />
+                     <div style={{backgroundImage: `url(${prop.cover})`}} className="card-img">
+                     </div>
                     <span className='card-text'>{prop.title}</span>
                     </Link> }
                    
