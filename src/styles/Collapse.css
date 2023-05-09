@@ -1,4 +1,5 @@
 .about-article {
+    margin: 0px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,11 +9,11 @@
 list-style: none;
 }
 .abouts-container {
-    margin: 0px 100px 200px 100px;
-    width: 80%;
+    width: 100%;
+    padding-bottom: 100px;
 }
-.about {
-    padding: 15px;
+.about-element {
+    padding: 15px 5%;
 }
 .about-btn {
     display: flex;
@@ -20,9 +21,8 @@ list-style: none;
     align-items: center;
     background: #FF6060;
     border-radius: 5px;
-    padding-left: 3%;
+    padding: 10px;
     font-size: 24px;
-    line-height: 34px;
     font-weight: 500;
     color: #FFFFFF;
     width: 100%;
@@ -37,6 +37,322 @@ list-style: none;
     border-radius: 5px;
     padding: 20px 20px;
     font-size: 24px;
-    line-height: 34px;
     color: #FF6060;
 }
+.accomodation-container {
+    font-weight: 500;
+    color: #FF6060;
+    margin: 0px 100px 50px 100px;
+}
+
+.accomodations-list {
+    list-style-type: none;
+}
+
+.accomodation {
+    display: flex;
+    flex-direction: column;
+}
+
+.accomodation-cover {
+    border-radius: 25px;
+    width: auto;
+    height: 415px;
+    object-fit: cover;
+}
+.accomodations-header {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;   
+}
+.accomodations-header.left {
+    display: flex;
+    flex-direction: column; 
+}
+.accomodations-header.right {
+    display: flex;
+    flex-direction: column;
+}
+.accomodation-title {
+    font-size: 36px;
+}
+.accomodation-location {
+    font-size: 18px;
+    padding: 10px 0px 20px 0px;
+}
+.accomodation-tags {
+    font-size: 14px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.accomodation-tag {
+    margin: 0px;
+    height: 20px;
+    width: auto;
+    background: #FF6060;
+    border-radius: 10px;
+    color: white;
+    padding: 3px 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.accomodation-host {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
+
+}
+.accomodation-host-picture {
+    width: 64px;
+    height: 64px;
+    border-radius: 30px;
+}
+.accomodation-host-name {
+    text-align: right;
+    width: 50%;
+    padding-right: 10px;
+}
+
+.rating {
+    display: flex;
+    font-size: 34px;
+    letter-spacing: 3px;
+}
+.fullStar {
+    color:#FF6060;
+}
+.emptyStar {
+    color: #E3E3E3;
+}
+.accomodations-toggles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+.accomodation-description, .accomodation-equipments {
+    width: 45%;  
+    margin-block-end: 20px;
+}
+.btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #FF6060;
+    border-radius: 10px;
+    padding: 3%;
+    font-size: 18px;
+    color: #FFFFFF;
+    width: 100%;
+    border:none;
+}
+.fa-solid {
+    padding-right: 3%;
+}
+.equipements {
+    padding: 0px 20px;
+    margin: 0px;
+    
+}
+.content {
+    padding: 30px 0px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    background: #F7F7F7;
+    border-radius: 5px;
+    padding: 30px 20px;
+    color: #FF6060;
+}
+
+@media screen and (max-width: 800px) {
+    .about-article {
+        margin: 0px 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;    
+    }
+    .about-element {
+        padding: 14px 4%;
+    }
+    .about-btn {
+        font-size: 20px;
+    }
+    .about-text {
+        font-size: 20px;
+    }
+    .accomodation-container {
+        margin: 0px 80px;
+    }
+    .accomodations-header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;   
+    }
+    .accomodation-title {
+        font-size: 32px;
+    }  
+    .accomodations-header.right {
+        flex-direction: row-reverse;
+    }
+
+    .accomodations-toggles {
+        flex-direction: column;
+    }
+    .accomodation-description, .accomodation-equipments {
+        width: 100%;
+    }
+  }
+  @media screen and (max-width: 700px) {
+    .about-article {
+        margin: 0px 60px;    
+    }
+    .about-element {
+        padding: 13px 3%;
+    }
+    .about-btn {
+        font-size: 18px;
+    }
+    .about-text {
+        font-size: 18px;
+    }
+    .accomodation-container {
+        margin: 0px 60px;
+    }
+    .accomodation-title {
+        font-size: 28px;
+    }
+    .accomodation-host-name {
+        font-size: 16px;
+    }    
+    .accomodation-host-picture {
+        width: 56px;
+        height: 56px;
+    }
+    .btn {
+        font-size: 16px;
+    }
+    .content {
+        font-size: 16px
+    }
+    .rating {
+        font-size: 30px;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .about-article {
+        margin: 0px 40px;   
+    }
+    .about-element {
+        padding: 12px 2%;
+    }
+    .about-btn {
+        font-size: 16px;
+    }
+    .about-text {
+        font-size: 16px;
+    }
+    .accomodation-container {
+        margin: 0px 40px;
+    }
+    .accomodation-title {
+        font-size: 24px;
+    }
+    .accomodation-location {
+        font-size: 16px;
+    }
+    .accomodation-host-name {
+        font-size: 14px;
+    }    
+    .accomodation-host-picture {
+        width: 48px;
+        height: 48px;
+    }
+    .accomodation-tag p {
+        font-size: 12px;
+    }
+    .content {
+        font-size: 14px
+    }
+    .rating {
+        font-size: 26px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .about-article {
+        margin: 0px 30px; 
+    }
+    .about-element {
+        padding: 11px 1%;
+    }
+    .about-btn {
+        font-size: 15px;
+    }
+    .about-text {
+        font-size: 14px;
+    }
+    .accomodation-container {
+        margin: 0px 30px;
+    }
+    .accomodation-title {
+        font-size: 22px;
+    }
+    .accomodation-host-picture {
+        width: 36px;
+        height: 36px;
+    }
+    .btn {
+        font-size: 14px;
+    }
+    .rating {
+        font-size: 24px;
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .about-article {
+        margin: 0px 20px; 
+    }
+    .about-element {
+        padding: 10px 0%;
+    }
+    .about-btn {
+        font-size: 13px;
+    }
+    .about-text {
+        font-size: 12px;
+    }
+    .accomodation-container {
+        margin: 0px 20px;
+    }
+    .accomodation-title {
+        font-size: 18px;
+    }
+    .accomodation-location {
+        font-size: 14px;
+    }
+    .accomodation-host-name {
+        font-size: 12px;
+    }    
+    .accomodation-host-picture {
+        width: 32px;
+        height: 32px;
+    }
+    .accomodation-tag p {
+        font-size: 10px;
+    }
+    .btn {
+        font-size: 13px;
+    }
+    .content {
+        font-size: 12px
+    }
+    .rating {
+        font-size: 22px;
+    }
+  }
+
