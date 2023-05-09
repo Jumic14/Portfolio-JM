@@ -1,15 +1,6 @@
 * {
   font-family: 'Montserrat';
 }
-
-.cards {
-
-  margin: 50px 100px;
-  padding: 50px 2%;
-  background: #F7F7F7;
-  border-radius: 25px;
-}
-
 #error-page {
   color: #FF6060;
   text-align: center;
@@ -18,19 +9,66 @@
   line-height: 51px;
   letter-spacing: 0em;
 }
-#error-page a {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-  color: #FF6060;
-}
+
 .error-number {
 font-size: 288px;
 font-weight: 700;
 line-height: 411px;
 }
 .error-link {
-  padding: 150px;
+  padding: 150px 0px;
+}
+.error-link a {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  color: #FF6060;
+}
+@media screen and (max-width: 800px) {
+  .error-number {
+    font-size: 245px;
+    }
+    #error-page {
+      font-size: 30px;
+    }
+}
+@media screen and (max-width: 700px) {
+  .error-number {
+    font-size: 210px;
+    }
+    #error-page {
+      font-size: 24px;
+    }
+    .error-link a {
+      font-size: 16px;
+    }
+}
+@media screen and (max-width: 600px) {
+  .error-number {
+    font-size: 180px;
+    }
+    #error-page {
+      font-size: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+  .error-number {
+    font-size: 150px;
+    }
+    #error-page {
+      font-size: 16px;
+    }
+}
+@media screen and (max-width: 450px) {
+  .error-number {
+    font-size: 136.9px;
+    }
+    #error-page {
+      font-size: 14px;
+    }
+  .error-link a {
+    font-size: 14px;
+  }
 }
 
 

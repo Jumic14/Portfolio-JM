@@ -9,14 +9,19 @@ import Root from "./routes/root"
 import ErrorPage from "./routes/error-page";
 import Home from './routes/Home'
 import About from "./routes/About"
-
-
+import Accomodation from "./routes/Accomodation"
+import HeaderChild from './components/HeaderChild';
+import FooterChild from './components/FooterChild';
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    errorElement: <ErrorPage />,
+    errorElement: [<HeaderChild />, <ErrorPage  />, <FooterChild />],
     children: [
+      {
+        path: "/",
+        element: <Home />
+      },
       {
         path: "Home/",
         element: <Home />,
@@ -25,9 +30,18 @@ const router = createBrowserRouter([
         path: "About/",
         element: <About />,
       },
+      {
+        path: "Accomodation/:id",
+        element: <Accomodation />,
+      },
+      {
+        path: "Error/",
+        element: <ErrorPage />,
+      },
     ],
   } 
 ]);
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
