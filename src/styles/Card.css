@@ -23,13 +23,13 @@
     display: flex;
     position: relative;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     width: 100%;
     height: 340px;
 }
 .card-text {
     display: flex;
-    align-items: end;
+    align-items: flex-end;
     position: absolute;
     flex-wrap: wrap;
     font-size: 18px;
