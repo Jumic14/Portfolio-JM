@@ -1,9 +1,9 @@
 import '../styles/Collapse.css'
-import React, { useState } from 'react';
+import React from 'react';
+import { useParams } from 'react-router-dom';
 import abouts from '../data/abouts';
 import datas from '../data/datas';
 import ratingStar from './Ratings';
-import { useNavigate, useParams } from 'react-router-dom';
 
 
 export default function Collapse({props}) {
