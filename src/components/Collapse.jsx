@@ -8,7 +8,7 @@ import projects from '../data/projects';
 
 export default function Collapse({props}) {
 	let currentId = useParams().id;
-	const currentLocation = window.location.href;
+	const currentLocation = window.location.pathname;
 
   const [toggle, setToggle] = React.useState(false);
   function toggleFunction(id) {
@@ -24,7 +24,7 @@ export default function Collapse({props}) {
     });
   }  
 
-  if (currentLocation === "http://localhost:3000/About") {
+  if (currentLocation === "/About") {
 	props = Array.from(abouts) 
 	return (
 	  <div className="abouts-container">
@@ -63,7 +63,7 @@ export default function Collapse({props}) {
 	  </div>
 	);
 } 
-else if (currentLocation === ("http://localhost:3000/Projects/"+currentId)){
+else if (currentLocation === ("/Projects/"+currentId)){
 	props=Array.from(projects)
 	return (
 		<div className="accomodation-container">
