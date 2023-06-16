@@ -1,12 +1,11 @@
 import { Link } from 'react-router-dom' 
-import logo from './../assets/images/logo.png';
 import '../styles/Header.css'
 
 export default function HeaderChild() {
     return (
         <div className="header">
             <div className="header-logo">
-            { <Link to="/Home"><img src={logo} className="logo" alt="logo" /></Link> }
+            { <Link to="/Home"><span>JM</span></Link> }
             </div>
             <nav className="header-nav">
                 <ul>
@@ -14,7 +13,13 @@ export default function HeaderChild() {
                         { <Link to="/Home">Accueil</Link> }
                     </li>
                     <li>
-                        { <Link to="/About">A propos</Link> }
+                        { <Link to="/Projects">Projets</Link> }
+                    </li>
+                    <li>
+                        { <Link to="/About">A propos de moi</Link> }
+                    </li>
+                    <li>
+                        { <Link to="/Contact">Contact</Link> }
                     </li>
                 </ul>
             </nav>

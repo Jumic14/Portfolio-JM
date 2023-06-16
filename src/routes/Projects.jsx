@@ -1,5 +1,6 @@
 import Banner from './../components/Banner'
-
+import Card from './../components/Card'
+import projects from '../data/projects'
 
 export default function Home() {
   return (
@@ -8,9 +9,8 @@ export default function Home() {
         <Banner />
       </aside>
       <article className='cards'>
-       
+        <Card props={projects}/>
       </article>
     </section>
   )
 }
-

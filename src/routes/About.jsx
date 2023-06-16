@@ -12,6 +12,10 @@ export default function About() {
     <article className='about-article'>
     <Collapse />
     </article>
+    <div className='about-quote'>
+      <p>"Le premier ennemi de la connaissance n'est pas l'ignorance, c'est l'illusion de la connaissance."</p>
+      <p>Stephen Hawking</p>
+    </div>
   </section>
   );
 }

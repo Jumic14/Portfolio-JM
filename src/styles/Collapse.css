@@ -168,7 +168,9 @@ list-style: none;
     padding: 30px 20px;
     color: #FF6060;
 }
-
+.fa-brands {
+    color: #FF6060;
+}
 @media screen and (max-width: 800px) {
     .about-article {
         margin: 0px 80px;

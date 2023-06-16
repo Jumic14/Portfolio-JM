@@ -1,11 +1,14 @@
-import logo from './../assets/images/logo-white.png';
+import { Link } from 'react-router-dom' 
 import '../styles/Footer.css'
 
 export default function FooterChild() {
     return (
         <div className="footer">
-            <img src={logo} className="footer-logo" alt="logo" />
-            <span className="footer-txt" >© 2020 Kasa. All rights reserved</span>
+             { <Link to="/Home"><span>JM</span></Link> }
+            <span className="footer-txt" >© 2023 Julien MICHEL.</span>
+            { <Link to="https://github.com/Jumic14"><i class="fa-brands fa-github" /></Link> } 
+            { <Link to="https://www.linkedin.com/in/jumic/"><i class="fa-brands fa-linkedin" /></Link> } 
+            
         </div>
     )
 }

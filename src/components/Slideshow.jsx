@@ -1,11 +1,6 @@
 import { useState } from "react";
 import '../styles/Slideshow.css'
 
-
-
-
-
-
 const Slideshow = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const goToPrevious = () => {

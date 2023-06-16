@@ -8,8 +8,10 @@ import './index.css';
 import Root from "./routes/root"
 import ErrorPage from "./routes/error-page";
 import Home from './routes/Home'
+import Projects from './routes/Projects'
 import About from "./routes/About"
-import Accomodation from "./routes/Accomodation"
+import Project from "./routes/Project"
+import Contact from "./routes/Contact"
 import HeaderChild from './components/HeaderChild';
 import FooterChild from './components/FooterChild';
 const router = createBrowserRouter([
@@ -27,12 +29,20 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
+        path: "Projects/",
+        element: <Projects />,
+      },
+      {
         path: "About/",
         element: <About />,
       },
       {
-        path: "Accomodation/:id",
-        element: <Accomodation />,
+        path: "Projects/:id",
+        element: <Project />,
+      },
+      {
+        path:"Contact/",
+        element:<Contact />
       },
       {
         path: "Error/",
