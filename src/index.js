@@ -25,6 +25,10 @@ const router = createBrowserRouter([
         element: <Home />
       },
       {
+        path: "Portfolio-JM/",
+        element: <Home />,
+      },
+      {
         path: "Home/",
         element: <Home />,
       },
