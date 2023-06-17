@@ -12,7 +12,7 @@
     position: absolute;
     align-self: center;
     z-index: 1;
-    font-size: 48px;
+    font-size: 36px;
     font-weight: 500;
     padding: 20px;
     letter-spacing: 0em;
@@ -28,58 +28,48 @@
 @media screen and (max-width: 800px) {
     .banner-container {
         margin: 40px 80px;
-    }
-    .banner-container.home {
         height: 200px;
     }
     .banner-txt {
         position: absolute;
         align-self: center;
         z-index: 1;
-        font-size: 48px;
+        font-size: 32px;
     }
   }
   @media screen and (max-width: 700px) {
     .banner-container {
         margin: 30px 60px;
-    }
-    .banner-container.home {
         height: 180px;
-    }
-    .banner-txt {
-        font-size: 36px;
-    }
-  }
-  @media screen and (max-width: 600px) {
-    .banner-container {
-        margin: 20px 40px;
-    }
-    .banner-container.home {
-        height: 158px;
-    }
-    .banner-txt {
-        font-size: 32px;
-    }
-  }
-  @media screen and (max-width: 500px) {
-    .banner-container {
-        margin: 15px 30px;
-    }
-    .banner-container.home {
-        height: 135px;
     }
     .banner-txt {
         font-size: 28px;
     }
   }
+  @media screen and (max-width: 600px) {
+    .banner-container {
+        margin: 20px 40px;
+        height: 158px;
+    }
+    .banner-txt {
+        font-size: 26px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .banner-container {
+        margin: 15px 30px;
+        height: 135px;
+    }
+    .banner-txt {
+        font-size: 22px;
+    }
+  }
   @media screen and (max-width: 450px) {
     .banner-container {
         margin: 10px 20px;
-    }
-    .banner-container.home {
         height: 111px;
     }
     .banner-txt {
-        font-size: 24px;
+        font-size: 16px;
     }
   }

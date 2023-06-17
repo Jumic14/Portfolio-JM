@@ -3,6 +3,7 @@ import Slideshow from '../components/Slideshow'
 import React, { useParams } from 'react-router-dom';
 import ErrorPage from './error-page';
 import projects from '../data/projects';
+import '../styles/Slideshow.css'
 
 let slides = [] 
 
@@ -21,12 +22,14 @@ let slides = []
   }
       return(
           <section>
-          <article className='accomodation'>
-          <div className="containerStyles">
-              <Slideshow slides={slides}/>
-            </div>
-          <Collapse />
-          </article>
+            <article className='project'>
+              <div className='slideshow'>
+                <div className="containerStyles">
+                  <Slideshow slides={slides}/>
+                </div>
+              </div>
+               <Collapse />
+            </article>
         </section>
       )
     } 

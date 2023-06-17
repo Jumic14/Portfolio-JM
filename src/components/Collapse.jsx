@@ -32,30 +32,29 @@ export default function Collapse({props}) {
 		  {props.map((prop) => (
 			<div key={prop.id} className="about-element">
 			  <button className='about-btn' onClick={() => toggleFunction(prop.id)}>
-				{prop.title}
-				<div className={'fa-solid fa-angle-up'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}></div>
+				<div className={'fa-solid fa-angles-up'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}></div>
 				<div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.id] ? 'block' : 'none' }}></div>
+				{prop.title}
 			  </button>
 			  <span className={'about-text'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}>
 				{
 					 prop.content.map((element, index) => {
 						if (!prop.path) {
 						return (
-						  <p className='equipements' key={"equip-"+index.toString()}>{element}</p>
+						  <p className='about' key={"about-"+index.toString()}>{element}</p>
 						  )}
 						  else {
 							return (
 								<div>
-							<p className='equipements' key={"equip-"+index.toString()}>{element}</p>
-							<Link to={prop.path}>Retrouvez le détail de la formation ici !</Link> 
+							<p className='about' key={"about-"+index.toString()}>{element}</p>
+							<p className='about'>Diplôme enregistré au RCNP niveau 5</p>
+							<p className='about'>OpenClassrooms</p>
+							<p className='about'>Vous pouvez accéder à la présentation complète de la formation <Link to={prop.path}>ici</Link>.</p> 
 							</div>
 
 						  )}
 					  })
 				}
-				
-				            
-
 			  </span>
 			</div>
 		  ))}
@@ -66,59 +65,59 @@ export default function Collapse({props}) {
 else if (currentLocation === ("/Projects/"+currentId)){
 	props=Array.from(projects)
 	return (
-		<div className="accomodation-container">
-		  <div className="accomodations-list">
+		<div className="project-container">
+		  <div className="projects-list">
 		  {props.filter((prop) => prop.id === currentId).map((prop) => (
-					  <div key={prop.id} className="accomodation">
-				<div className="accomodations-header">
-				  <div className="accomodations-header left">
-					<span className='accomodation-title'>{prop.title}</span>
-					<span className='accomodation-location'>{prop.year}</span>
-					<span className='accomodation-location'>{prop.description}</span>
+					  <div key={prop.id} className="project">
+				<div className="projects-header">
+				  <div className="projects-header left">
+					<span className='project-title'>{prop.title}</span>
+					<span className='project-location'>{prop.year}</span>
+					<span className='project-recap'>{prop.description}</span>
 				  </div>
-				  <div className="accomodations-header right">
-				  <span className='accomodation-tags'>
+				  <div className="projects-header right">
+				  <span className='project-stacks'>
 					  {
 					 prop.stack.map((element, index) => {
 						return (
-						  <p className='accomodation-tag' key={"tag-"+index.toString()}>{element}</p>
+						  <p className='project-stack' key={"stack-"+index.toString()}>{element}</p>
 						  )
 					  })
 					}
 					  </span>
-					  <div>
-					  <Link to={prop.repo}><i class="fa-brands fa-github" /></Link>
+					  <div className='github'>
+					  <Link to={prop.repo}><i className="fa-brands fa-github" /></Link>
 					  </div>
 				  </div>
 				</div>
-				<div className="accomodations-toggles">
-				<div className="accomodation-equipments">
-					<button className='accomodations-equipment btn' onClick={() => toggleFunction(prop.id)}>
-					  Équipements
-					  <div className={'fa-solid fa-angle-up'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}></div>
-					  <div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.id] ? 'block' : 'none' }}></div>
+				<div className="projects-toggles">
+				<div className="project-description">
+					<button className='projects-description btn' onClick={() => toogleDe(prop.description)}>
+					  Description
+					  <div className={'fa-solid fa-angles-up'} style={{ display: toggle[prop.description] ? 'block' : 'none' }}></div>
+					  <div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.description] ? 'block' : 'none' }}></div>
 					</button>
-					<span className={'equipment content'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}>
+					<span className={'description content'} style={{ display: toggle[prop.description] ? 'block' : 'none' }}>
 					{
 					  prop.competences.map((element, index) => {
 						return (
-						  <p className='equipements' key={"equip-"+index.toString()}>{element}</p>
+						  <p className='description' key={"equip-"+index.toString()}>{element}</p>
 						  )
 					  })
 					}
 					</span>
 				  </div>
-				  <div className="accomodation-equipments">
-					<button className='accomodations-equipment btn' onClick={() => toggleFunction(prop.id)}>
-					  Équipements
-					  <div className={'fa-solid fa-angle-up'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}></div>
+				  <div className="project-ressources">
+					<button className='projects-ressources btn' onClick={() => toggleFunction(prop.id)}>
+					  Ressources
+					  <div className={'fa-solid fa-angles-up'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}></div>
 					  <div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.id] ? 'block' : 'none' }}></div>
 					</button>
-					<span className={'equipment content'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}>
+					<span className={'ressources content'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}>
 					{
 					  prop.ressources.map((element, index) => {
 						return (
-						  <p className='equipements' key={"equip-"+index.toString()}>{element}</p>
+						  <p className='ressources' key={"equip-"+index.toString()}>{element}</p>
 						  )
 					  })
 					}

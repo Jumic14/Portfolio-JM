@@ -4,7 +4,7 @@ import '../styles/Header.css'
 export default function HeaderChild() {
     return (
         <div className="header">
-            <div className="header-logo">
+            <div className="header-home"> 
             { <Link to="/Home"><span>JM</span></Link> }
             </div>
             <nav className="header-nav">

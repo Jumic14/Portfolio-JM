@@ -1,0 +1,174 @@
+
+.home-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #0e2c63;
+}
+.home-introduction {
+    font-size: 36px;
+    padding-bottom: 50px;
+}
+.home-summary {
+    width: 65%;
+    border-top: solid 2px #807e7e;
+    border-bottom: solid 2px #807e7e;
+}
+.home-summary ul {
+    padding-inline-start: 0px;
+}
+.home-summary li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    padding: 20px;
+}
+.home-summary li a {
+    font-size: 20px;
+    text-decoration: none;
+}
+.home-summary li a:hover {
+    font-size: 22px;
+}
+.home-summary li a:visited {
+    color: #0e2c63;
+}
+.home-skills {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.skills-title, .tools-title {
+    font-size: 28px;
+    padding: 50px;
+}
+.skills {
+    width: 100%;
+    border-bottom: solid 2px #807e7e;
+}
+.skills, .tools {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-size: 12px;
+}
+.stack, .tool {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+.stack-img, .tool-img {
+    width: auto;
+    height: 50px;
+}
+@media screen and (max-width: 800px) {
+    .home-introduction {
+        font-size: 32px;
+        padding-bottom: 46px;
+    }
+    .home-summary li {
+        padding: 18px;
+    }
+    .skills-title, .tools-title {
+        font-size: 24px;
+        padding: 46px;
+    }
+    .skills, .tools {
+        font-size: 10px;
+    }
+    .stack, .tool {
+        padding: 18px;
+    }
+  }
+@media screen and (max-width: 700px) {
+    .home-introduction {
+        font-size: 20px;
+        padding-bottom: 42px;
+    }
+    .home-summary li {
+        padding: 16px;
+    }
+    .home-summary li a {
+        font-size: 14px;
+    }
+    .home-summary li a:hover {
+        font-size: 16px;
+    }
+    .skills-title, .tools-title {
+        font-size: 16px;
+        padding: 42px;
+    }
+    .stack, .tool {
+        padding: 16px;
+    }
+  }
+@media screen and (max-width: 600px) {
+    .home-introduction {
+        font-size: 24px;
+        padding-bottom: 38px;
+    }
+    .home-summary li {
+        padding: 14px;
+    }
+    .skills-title, .tools-title {
+        font-size: 14px;
+        padding: 38px;
+    }
+    .stack, .tool {
+        padding: 14px;
+    }
+    .stack-img, .tool-img {
+        width: auto;
+        height: 40px;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .home-introduction {
+        font-size: 20px;
+        padding-bottom: 34px;
+    }
+    .home-summary li {
+        padding: 12px;
+    }
+    .home-summary li a {
+        font-size: 12px;
+    }
+    .home-summary li a:hover {
+        font-size: 14px;
+    }
+    .skills-title, .tools-title {
+        padding: 34px;
+    }
+    .stack, .tool {
+        padding: 12px;
+    }
+  }
+@media screen and (max-width: 450px) {
+    .home-introduction {
+        font-size: 18px;
+        padding-bottom: 30px;
+    }
+    .home-summary li {
+        padding: 10px;
+    }
+    .skills-title, .tools-title {
+        font-size: 12px;
+        padding: 30px;
+    }
+    .skills, .tools {
+        font-size: 8px;
+    }
+    .stack, .tool {
+        padding: 10px;
+    }
+    .stack-img, .tool-img {
+        width: auto;
+        height: 30px;
+    }
+  }

@@ -17,124 +17,98 @@ list-style: none;
 }
 .about-btn {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    background: #FF6060;
+    background: #344563;
     border-radius: 5px;
     padding: 10px;
-    font-size: 24px;
+    font-size: 22px;
     font-weight: 500;
     color: #FFFFFF;
     width: 100%;
     border:none
 }
-
 .fa-solid {
     padding-right: 3%;
 }
+.about {
+    padding: 5px 20px;
+    margin: 0px; 
+}
+.about a{
+    text-decoration: none;
+}
+.about a:hover{
+    text-decoration: underline;
+    font-size: 22px;
+}
+.about a:visited{
+    color: #807e7e;
+}
 .about-text {
-    background: #F7F7F7;
+    background: #0e2c6313;
     border-radius: 5px;
     padding: 20px 20px;
-    font-size: 24px;
-    color: #FF6060;
+    font-size: 20px;
+    color: #807e7e;
 }
-.accomodation-container {
+.project {
+    display: flex;
+    flex-direction: column;
     font-weight: 500;
-    color: #FF6060;
+    color: #344563;
     margin: 0px 100px 50px 100px;
 }
 
-.accomodations-list {
+.projects-list {
     list-style-type: none;
 }
 
-.accomodation {
-    display: flex;
-    flex-direction: column;
-}
-
-.accomodation-cover {
-    border-radius: 25px;
-    width: auto;
-    height: 415px;
-    object-fit: cover;
-}
-.accomodations-header {
+.projects-header {
     padding: 20px 0px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;   
 }
-.accomodations-header.left {
+.projects-header.left {
     display: flex;
     flex-direction: column; 
 }
-.accomodations-header.right {
+.projects-header.right {
     display: flex;
     flex-direction: column;
 }
-.accomodation-title {
+.project-title {
     font-size: 36px;
 }
-.accomodation-location {
+.project-location, .project-recap {
     font-size: 18px;
     padding: 10px 0px 20px 0px;
 }
-.accomodation-tags {
+.project-stacks {
     font-size: 14px;
     font-weight: 500;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-.accomodation-tag {
+.project-stack {
     margin: 0px;
     height: 20px;
     width: auto;
-    background: #FF6060;
+    background: #344563;
     border-radius: 10px;
     color: white;
     padding: 3px 30px;
     margin-right: 10px;
     margin-bottom: 10px;
 }
-.accomodation-host {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    justify-content: flex-end;
-
-}
-.accomodation-host-picture {
-    width: 64px;
-    height: 64px;
-    border-radius: 30px;
-}
-.accomodation-host-name {
-    text-align: right;
-    width: 50%;
-    padding-right: 10px;
-}
-
-.rating {
-    display: flex;
-    font-size: 34px;
-    letter-spacing: 3px;
-}
-.fullStar {
-    color:#FF6060;
-}
-.emptyStar {
-    color: #E3E3E3;
-}
-.accomodations-toggles {
+.projects-toggles {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 100%;
 }
-.accomodation-description, .accomodation-equipments {
+.project-description, .project-ressources {
     width: 45%;  
     margin-block-end: 20px;
 }
@@ -142,7 +116,7 @@ list-style: none;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #FF6060;
+    background: #344563;
     border-radius: 10px;
     padding: 3%;
     font-size: 18px;
@@ -153,23 +127,27 @@ list-style: none;
 .fa-solid {
     padding-right: 3%;
 }
-.equipements {
+.description, .ressources{
     padding: 0px 20px;
-    margin: 0px;
-    
+    margin: 0px; 
 }
 .content {
     padding: 30px 0px;
     font-size: 18px;
     font-weight: 400;
     line-height: 26px;
-    background: #F7F7F7;
+    background: #0e2c6313;
     border-radius: 5px;
     padding: 30px 20px;
-    color: #FF6060;
+    color: #807e7e;
 }
 .fa-brands {
-    color: #FF6060;
+    font-size: 50px;
+    color: #344563;
+}
+.github {
+    align-self: flex-end;
+    padding-right: 5%;
 }
 @media screen and (max-width: 800px) {
     .about-article {
@@ -186,27 +164,33 @@ list-style: none;
         font-size: 20px;
     }
     .about-text {
+        font-size: 18px;
+    }
+    .about a:hover{
         font-size: 20px;
     }
-    .accomodation-container {
+    .project {
+        margin: 0px 0px 50px 0px;
+    }
+    .project-container {
         margin: 0px 80px;
     }
-    .accomodations-header {
+    .projects-header {
         display: flex;
         flex-direction: column;
         justify-content: space-between;   
     }
-    .accomodation-title {
+    .project-title {
         font-size: 32px;
     }  
-    .accomodations-header.right {
+    .projects-header.right {
         flex-direction: row-reverse;
     }
-
-    .accomodations-toggles {
+    .projects-toggles {
         flex-direction: column;
+        width: 100%;
     }
-    .accomodation-description, .accomodation-equipments {
+    .project-description, .project-ressources {
         width: 100%;
     }
   }
@@ -221,29 +205,22 @@ list-style: none;
         font-size: 18px;
     }
     .about-text {
+        font-size: 16px;
+    }
+    .about a:hover{
         font-size: 18px;
     }
-    .accomodation-container {
+    .project-container {
         margin: 0px 60px;
     }
-    .accomodation-title {
+    .project-title {
         font-size: 28px;
-    }
-    .accomodation-host-name {
-        font-size: 16px;
-    }    
-    .accomodation-host-picture {
-        width: 56px;
-        height: 56px;
     }
     .btn {
         font-size: 16px;
     }
     .content {
         font-size: 16px
-    }
-    .rating {
-        font-size: 30px;
     }
   }
   @media screen and (max-width: 600px) {
@@ -257,32 +234,25 @@ list-style: none;
         font-size: 16px;
     }
     .about-text {
+        font-size: 14px;
+    }
+    .about a:hover{
         font-size: 16px;
     }
-    .accomodation-container {
+    .project-container {
         margin: 0px 40px;
     }
-    .accomodation-title {
+    .project-title {
         font-size: 24px;
     }
-    .accomodation-location {
+    .project-location, .project-recap {
         font-size: 16px;
     }
-    .accomodation-host-name {
-        font-size: 14px;
-    }    
-    .accomodation-host-picture {
-        width: 48px;
-        height: 48px;
-    }
-    .accomodation-tag p {
+    .project-stack p {
         font-size: 12px;
     }
     .content {
         font-size: 14px
-    }
-    .rating {
-        font-size: 26px;
     }
   }
   @media screen and (max-width: 500px) {
@@ -296,23 +266,24 @@ list-style: none;
         font-size: 15px;
     }
     .about-text {
+        font-size: 12px;
+    }
+    .about a:hover{
         font-size: 14px;
     }
-    .accomodation-container {
+    .project-container {
         margin: 0px 30px;
     }
-    .accomodation-title {
+    .project-title {
         font-size: 22px;
     }
-    .accomodation-host-picture {
-        width: 36px;
-        height: 36px;
+    .project-stacks {
+        font-size: 10px;
+        align-items: center;
+        margin-bottom: 5px;
     }
     .btn {
         font-size: 14px;
-    }
-    .rating {
-        font-size: 24px;
     }
   }
   @media screen and (max-width: 450px) {
@@ -326,25 +297,21 @@ list-style: none;
         font-size: 13px;
     }
     .about-text {
+        font-size: 10px;
+    }
+    .about a:hover{
         font-size: 12px;
     }
-    .accomodation-container {
+    .project-container {
         margin: 0px 20px;
     }
-    .accomodation-title {
+    .project-title {
         font-size: 18px;
     }
-    .accomodation-location {
+    .project-location, .project-recap{
         font-size: 14px;
     }
-    .accomodation-host-name {
-        font-size: 12px;
-    }    
-    .accomodation-host-picture {
-        width: 32px;
-        height: 32px;
-    }
-    .accomodation-tag p {
+    .project-stack p {
         font-size: 10px;
     }
     .btn {
@@ -352,9 +319,6 @@ list-style: none;
     }
     .content {
         font-size: 12px
-    }
-    .rating {
-        font-size: 22px;
     }
   }
 
