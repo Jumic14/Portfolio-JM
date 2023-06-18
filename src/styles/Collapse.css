@@ -28,7 +28,7 @@ list-style: none;
     border:none
 }
 .fa-solid {
-    padding-right: 3%;
+    padding-right: 10px;
 }
 .about {
     padding: 5px 20px;
@@ -76,11 +76,18 @@ list-style: none;
 .projects-header.right {
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 .project-title {
     font-size: 36px;
+    padding-top: 60px;
+    padding-bottom: 10px;
 }
-.project-location, .project-recap {
+.project-date{
+    font-size: 18px;
+    padding: 0px,
+}
+.project-intro, .project-context {
     font-size: 18px;
     padding: 10px 0px 20px 0px;
 }
@@ -90,6 +97,7 @@ list-style: none;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: flex-end;
 }
 .project-stack {
     margin: 0px;
@@ -108,27 +116,34 @@ list-style: none;
     justify-content: space-between;
     width: 100%;
 }
-.project-description, .project-ressources {
+.project-description {
+    width: 100%;
+    padding: 30px 0px;
+}
+.projects-description.btn{
+    padding: 2% 1.5%; 
+}
+.project-skills, .project-ressources{
     width: 45%;  
     margin-block-end: 20px;
 }
 .btn {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     background: #344563;
     border-radius: 10px;
+    height: 50px;
     padding: 3%;
-    font-size: 18px;
+    font-size: 22px;
     color: #FFFFFF;
     width: 100%;
     border:none;
 }
 .fa-solid {
-    padding-right: 3%;
+    padding-right: 10px;
 }
-.description, .ressources{
-    padding: 0px 20px;
+.skill, .ressources, .description{
+    padding: 10px 20px;
     margin: 0px; 
 }
 .content {
@@ -149,7 +164,18 @@ list-style: none;
     align-self: flex-end;
     padding-right: 5%;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1200px) {
+    .project {
+        margin: 0px 75px 50px 75px;
+    }
+}
+@media screen and (max-width: 1050px) {
+    .project {
+        margin: 0px 50px 50px 50px;
+    }
+}
+
+@media screen and (max-width: 900px) {
     .about-article {
         margin: 0px 80px;
         display: flex;
@@ -160,10 +186,10 @@ list-style: none;
     .about-element {
         padding: 14px 4%;
     }
-    .about-btn {
+    .about-btn, .btn {
         font-size: 20px;
     }
-    .about-text {
+    .about-text, .content {
         font-size: 18px;
     }
     .about a:hover{
@@ -182,15 +208,23 @@ list-style: none;
     }
     .project-title {
         font-size: 32px;
+        padding-top: 50px;
     }  
     .projects-header.right {
         flex-direction: row-reverse;
+        justify-content: space-between;
     }
     .projects-toggles {
         flex-direction: column;
         width: 100%;
     }
-    .project-description, .project-ressources {
+    .projects-description.btn{
+        padding: 3%; 
+    }
+    .project-description {
+        padding: 20px 0px;
+    }
+    .project-skills, .project-ressources {
         width: 100%;
     }
   }
@@ -201,11 +235,11 @@ list-style: none;
     .about-element {
         padding: 13px 3%;
     }
-    .about-btn {
-        font-size: 18px;
-    }
-    .about-text {
+    .about-btn, .btn {
         font-size: 16px;
+    }
+    .about-text, .content{
+        font-size: 15px;
     }
     .about a:hover{
         font-size: 18px;
@@ -215,12 +249,7 @@ list-style: none;
     }
     .project-title {
         font-size: 28px;
-    }
-    .btn {
-        font-size: 16px;
-    }
-    .content {
-        font-size: 16px
+        padding-top: 40px;
     }
   }
   @media screen and (max-width: 600px) {
@@ -230,10 +259,10 @@ list-style: none;
     .about-element {
         padding: 12px 2%;
     }
-    .about-btn {
-        font-size: 16px;
+    .about-btn, .btn {
+        font-size: 15px;
     }
-    .about-text {
+    .about-text, .content {
         font-size: 14px;
     }
     .about a:hover{
@@ -244,15 +273,13 @@ list-style: none;
     }
     .project-title {
         font-size: 24px;
+        padding-top: 30px;
     }
-    .project-location, .project-recap {
+    .project-date, .project-intro, .project-context {
         font-size: 16px;
     }
     .project-stack p {
         font-size: 12px;
-    }
-    .content {
-        font-size: 14px
     }
   }
   @media screen and (max-width: 500px) {
@@ -262,10 +289,10 @@ list-style: none;
     .about-element {
         padding: 11px 1%;
     }
-    .about-btn {
-        font-size: 15px;
+    .about-btn, .btn {
+        font-size: 13px;
     }
-    .about-text {
+    .about-text, .content {
         font-size: 12px;
     }
     .about a:hover{
@@ -276,14 +303,11 @@ list-style: none;
     }
     .project-title {
         font-size: 22px;
+        padding-top: 30px;
     }
     .project-stacks {
         font-size: 10px;
-        align-items: center;
         margin-bottom: 5px;
-    }
-    .btn {
-        font-size: 14px;
     }
   }
   @media screen and (max-width: 450px) {
@@ -293,10 +317,10 @@ list-style: none;
     .about-element {
         padding: 10px 0%;
     }
-    .about-btn {
-        font-size: 13px;
+    .about-btn, .btn {
+        font-size: 11px;
     }
-    .about-text {
+    .about-text, .content {
         font-size: 10px;
     }
     .about a:hover{
@@ -307,18 +331,13 @@ list-style: none;
     }
     .project-title {
         font-size: 18px;
+        padding-top: 25px;
     }
-    .project-location, .project-recap{
+    .project-date, .project-intro, .project-context{
         font-size: 14px;
     }
     .project-stack p {
         font-size: 10px;
-    }
-    .btn {
-        font-size: 13px;
-    }
-    .content {
-        font-size: 12px
     }
   }
 

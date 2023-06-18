@@ -22,7 +22,19 @@ export default function Collapse({props}) {
       ...toggle,
       [description]: !toggle[description],
     });
-  }  
+  } 
+  function toogleSk(skills) {
+    setToggle({
+      ...toggle,
+      [skills]: !toggle[skills],
+    });
+  } 
+  function toogleRe(ressources) {
+    setToggle({
+      ...toggle,
+      [ressources]: !toggle[ressources],
+    });
+  } 
 
   if (currentLocation === "/About") {
 	props = Array.from(abouts) 
@@ -38,22 +50,23 @@ export default function Collapse({props}) {
 			  </button>
 			  <span className={'about-text'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}>
 				{
-					 prop.content.map((element, index) => {
+					prop.content.map((element, index) => {
 						if (!prop.path) {
-						return (
-						  <p className='about' key={"about-"+index.toString()}>{element}</p>
-						  )}
-						  else {
 							return (
-								<div>
-							<p className='about' key={"about-"+index.toString()}>{element}</p>
-							<p className='about'>Diplôme enregistré au RCNP niveau 5</p>
-							<p className='about'>OpenClassrooms</p>
-							<p className='about'>Vous pouvez accéder à la présentation complète de la formation <Link to={prop.path}>ici</Link>.</p> 
-							</div>
-
-						  )}
-					  })
+								<div key={"about-"+index.toString()}>
+									<p className='about'>{element}</p>
+								</div>
+							)}
+							else {
+								return (
+									<div key={"about-"+index.toString()}>
+										<p className='about'>{element}</p>
+										<p className='about'>Diplôme enregistré au RCNP niveau 5</p>
+										<p className='about'>OpenClassrooms</p>
+										<p className='about'>Vous pouvez accéder à la présentation complète de la formation <Link to={prop.path}>ici</Link>.</p> 
+									</div>
+							)}
+					})
 				}
 			  </span>
 			</div>
@@ -68,15 +81,16 @@ else if (currentLocation === ("/Projects/"+currentId)){
 		<div className="project-container">
 		  <div className="projects-list">
 		  {props.filter((prop) => prop.id === currentId).map((prop) => (
-					  <div key={prop.id} className="project">
-				<div className="projects-header">
-				  <div className="projects-header left">
-					<span className='project-title'>{prop.title}</span>
-					<span className='project-location'>{prop.year}</span>
-					<span className='project-recap'>{prop.description}</span>
-				  </div>
-				  <div className="projects-header right">
-				  <span className='project-stacks'>
+					  <div key={'project'+prop.id} className="project">
+						<span className='project-title'>{prop.title}</span>
+						<span className='project-date'>{prop.year}</span>
+						<div className="projects-header">
+				  			<div className="projects-header left">
+								<span className='project-intro'>{prop.intro}</span>
+								<span className='project-context'>{prop.context}</span>
+				 			 </div>
+				  		<div className="projects-header right">
+				 		<span className='project-stacks'>
 					  {
 					 prop.stack.map((element, index) => {
 						return (
@@ -90,34 +104,50 @@ else if (currentLocation === ("/Projects/"+currentId)){
 					  </div>
 				  </div>
 				</div>
-				<div className="projects-toggles">
-				<div className="project-description">
-					<button className='projects-description btn' onClick={() => toogleDe(prop.description)}>
-					  Description
-					  <div className={'fa-solid fa-angles-up'} style={{ display: toggle[prop.description] ? 'block' : 'none' }}></div>
-					  <div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.description] ? 'block' : 'none' }}></div>
-					</button>
+				<div className='project-description'>
+				<button className='projects-description btn' onClick={() => toogleDe(prop.description)}>
+					<div className={'fa-solid fa-angles-up'} style={{ display: toggle[prop.description] ? 'block' : 'none' }}></div>
+					<div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.description] ? 'block' : 'none' }}></div>
+					Description
+				</button>
 					<span className={'description content'} style={{ display: toggle[prop.description] ? 'block' : 'none' }}>
 					{
-					  prop.competences.map((element, index) => {
+					  prop.description.map((element, index) => {
 						return (
-						  <p className='description' key={"equip-"+index.toString()}>{element}</p>
+						  <p className='description' key={"desc-"+index.toString()}>{element}</p>
+						  )
+					  })
+					}
+					</span>
+				</div>
+				<div className="projects-toggles">
+				<div className="project-skills">
+					<button className='projects-skills btn' onClick={() => toogleSk(prop.skills)}>
+						<div className={'fa-solid fa-angles-up'} style={{ display: toggle[prop.skills] ? 'block' : 'none' }}></div>
+					  	<div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.skills] ? 'block' : 'none' }}></div>
+					 	Compétences
+					</button>
+					<span className={'skill content'} style={{ display: toggle[prop.skills] ? 'block' : 'none' }}>
+					{
+					  prop.skills.map((element, index) => {
+						return (
+						  <p className='skill' key={"skill-"+index.toString()}>{element}</p>
 						  )
 					  })
 					}
 					</span>
 				  </div>
 				  <div className="project-ressources">
-					<button className='projects-ressources btn' onClick={() => toggleFunction(prop.id)}>
-					  Ressources
-					  <div className={'fa-solid fa-angles-up'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}></div>
-					  <div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.id] ? 'block' : 'none' }}></div>
+					<button className='projects-ressources btn' onClick={() => toogleRe(prop.ressources)}>
+						<div className={'fa-solid fa-angles-up'} style={{ display: toggle[prop.ressources] ? 'block' : 'none' }}></div>
+					 	<div className={'fa-solid fa-angle-down'} style={{ display: !toggle[prop.ressources] ? 'block' : 'none' }}></div>
+					  	Ressources
 					</button>
-					<span className={'ressources content'} style={{ display: toggle[prop.id] ? 'block' : 'none' }}>
+					<span className={'ressources content'} style={{ display: toggle[prop.ressources] ? 'block' : 'none' }}>
 					{
 					  prop.ressources.map((element, index) => {
 						return (
-						  <p className='ressources' key={"equip-"+index.toString()}>{element}</p>
+						  <p className='ressources' key={"ress-"+index.toString()}>{element}</p>
 						  )
 					  })
 					}
