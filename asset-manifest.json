@@ -1,10 +1,38 @@
 {
   "files": {
-    "main.css": "/Portfolio-JM/static/css/main.5ee72b14.css",
-    "main.js": "/Portfolio-JM/static/js/main.5761d591.js",
+    "main.css": "/Portfolio-JM/static/css/main.afcc4732.css",
+    "main.js": "/Portfolio-JM/static/js/main.08133421.js",
+    "static/media/cv-fr.png": "/Portfolio-JM/static/media/cv-fr.2ae96b4bfd6e6ab042ed.png",
+    "static/media/3-algorithmes.jpg": "/Portfolio-JM/static/media/3-algorithmes.0b6a24de803ef88ed293.jpg",
+    "static/media/7-projet-informatique.jpg": "/Portfolio-JM/static/media/7-projet-informatique.38f94fa45f7850b63a00.jpg",
+    "static/media/2-terminal.jpg": "/Portfolio-JM/static/media/2-terminal.430442bd07dae7c617ab.jpg",
+    "static/media/18-java-eclipse.jpg": "/Portfolio-JM/static/media/18-java-eclipse.75958744718a4929a885.jpg",
+    "static/media/15-seo.jpg": "/Portfolio-JM/static/media/15-seo.365f3d4835cb491939dd.jpg",
+    "static/media/17-gestion-projet-agile.jpg": "/Portfolio-JM/static/media/17-gestion-projet-agile.d977dac19f35e6f54a77.jpg",
+    "static/media/14-nodejs-express-mongodb.jpg": "/Portfolio-JM/static/media/14-nodejs-express-mongodb.c3cf7ba9673bf706aadd.jpg",
+    "static/media/1-html-css.jpg": "/Portfolio-JM/static/media/1-html-css.0c247d6c1fa1a9b83a30.jpg",
+    "static/media/10-pages-web-js.jpg": "/Portfolio-JM/static/media/10-pages-web-js.1d3899cf461ec6d9764f.jpg",
+    "static/media/6-env-front-end.jpg": "/Portfolio-JM/static/media/6-env-front-end.e8b62e45057e6fa7dd53.jpg",
+    "static/media/9-programmer-avec-js.jpg": "/Portfolio-JM/static/media/9-programmer-avec-js.d2f5788b8b911088456d.jpg",
+    "static/media/11-api-rest.jpg": "/Portfolio-JM/static/media/11-api-rest.23f2a57d23210870b91d.jpg",
+    "static/media/13-application-react.jpg": "/Portfolio-JM/static/media/13-application-react.85f23c63332f22a59452.jpg",
+    "static/media/5-python.jpg": "/Portfolio-JM/static/media/5-python.0ee1c777c3be05e59b5f.jpg",
+    "static/media/8-maquette-figma.jpg": "/Portfolio-JM/static/media/8-maquette-figma.e77f3e8c3d08db93b2a6.jpg",
+    "static/media/4-git.jpg": "/Portfolio-JM/static/media/4-git.52da330416c42bf04841.jpg",
+    "static/media/19-java.jpg": "/Portfolio-JM/static/media/19-java.310ed18d31df63ad4eb8.jpg",
+    "static/media/16-developpeur-agile.jpg": "/Portfolio-JM/static/media/16-developpeur-agile.d80de117da2585336645.jpg",
+    "static/media/12-react.jpg": "/Portfolio-JM/static/media/12-react.52ee9f237787dba2b0ff.jpg",
     "static/media/banner-home.jpg": "/Portfolio-JM/static/media/banner-home.a4c9baa775ee5e429570.jpg",
     "static/media/banner-contact.jpg": "/Portfolio-JM/static/media/banner-contact.b3b1b2647c1f4c56f4c3.jpg",
     "static/media/404.jpg": "/Portfolio-JM/static/media/404.d664ed5fad0b30e708bc.jpg",
+    "static/media/openclassrooms.jpg": "/Portfolio-JM/static/media/openclassrooms.4a0a144a6a17130cf3f6.jpg",
+    "static/media/certifications.png": "/Portfolio-JM/static/media/certifications.3238390e9873b25dcbd5.png",
+    "static/media/work-icon.png": "/Portfolio-JM/static/media/work-icon.cbc0c0fc21fe4303b297.png",
+    "static/media/contact-icon.png": "/Portfolio-JM/static/media/contact-icon.44a194c234332f1b24d2.png",
+    "static/media/certifications-icon.png": "/Portfolio-JM/static/media/certifications-icon.5257a199154b16150f1d.png",
+    "static/media/about-icon.png": "/Portfolio-JM/static/media/about-icon.e06677de095fd3c949cc.png",
+    "static/media/home-icon.png": "/Portfolio-JM/static/media/home-icon.268fe530216c67bd1dc2.png",
+    "static/media/ex.png": "/Portfolio-JM/static/media/ex.e3d4f9e5c8b469e45838.png",
     "static/media/react.svg": "/Portfolio-JM/static/media/react.287ed079d67ebccd2b751239d6ad0a4f.svg",
     "static/media/figma.svg": "/Portfolio-JM/static/media/figma.7109947ad8fa5db367ea172c9b3b7890.svg",
     "static/media/node.svg": "/Portfolio-JM/static/media/node.6e8c4b34fcf9cc95beeb523cf5b029d3.svg",
@@ -12,11 +40,11 @@
     "static/media/js.svg": "/Portfolio-JM/static/media/js.5d02826ad7a99884910d74ff958f38e9.svg",
     "static/media/css.svg": "/Portfolio-JM/static/media/css.1072a59dad7bcd4e8c82de4fca0cb597.svg",
     "static/media/html.svg": "/Portfolio-JM/static/media/html.df324691481d1b1c9b1fbe01f8563975.svg",
-    "main.5ee72b14.css.map": "/Portfolio-JM/static/css/main.5ee72b14.css.map",
-    "main.5761d591.js.map": "/Portfolio-JM/static/js/main.5761d591.js.map"
+    "main.afcc4732.css.map": "/Portfolio-JM/static/css/main.afcc4732.css.map",
+    "main.08133421.js.map": "/Portfolio-JM/static/js/main.08133421.js.map"
   },
   "entrypoints": [
-    "static/css/main.5ee72b14.css",
-    "static/js/main.5761d591.js"
+    "static/css/main.afcc4732.css",
+    "static/js/main.08133421.js"
   ]
 }
