@@ -8,12 +8,14 @@ import './index.css';
 import Root from "./routes/root"
 import ErrorPage from "./routes/error-page";
 import Home from './routes/Home'
-import Projects from './routes/Projects'
-import About from "./routes/About"
-import Project from "./routes/Project"
+import About from './routes/About'
+import Works from './routes/Works'
+import Certifications from "./routes/Certifications"
+import Work from "./routes/Work"
 import Contact from "./routes/Contact"
 import HeaderChild from './components/HeaderChild';
 import FooterChild from './components/FooterChild';
+import Certificate from './routes/Certificate';
 const router = createBrowserRouter([
   {
     path: "/",
@@ -33,16 +35,24 @@ const router = createBrowserRouter([
         element: <Home />,
       },
       {
-        path: "Projects/",
-        element: <Projects />,
+        path: "Works/",
+        element: <Works />,
       },
       {
         path: "About/",
         element: <About />,
       },
       {
-        path: "Projects/:id",
-        element: <Project />,
+        path: "Certifications/",
+        element: <Certifications />,
+      },
+      {
+        path: "Certifications/:id",
+        element: <Certificate />,
+      },
+      {
+        path: "Works/:id",
+        element: <Work />,
       },
       {
         path:"Contact/",

@@ -1,0 +1,33 @@
+.works {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+padding: 15px 5%;
+}
+.works-title {
+    align-self: center;
+    font-size: 36px;
+    color: #0e2c63;
+    padding: 20px 0px 50px 0px;
+}
+.works-txt {
+    font-size: 20px;
+}
+@media screen and (max-width: 800px) {
+    .works-title {
+        font-size: 20px;
+        padding-bottom: 25px;
+    }
+    .works-txt {
+        font-size: 16px;
+    }
+  }
+@media screen and (max-width: 500px) {
+    .works-title {
+        font-size: 18px;
+        padding-bottom: 20px;
+    }
+    .works-txt {
+        font-size: 12px;
+    }
+  }

@@ -1,21 +1,31 @@
-.about-article {
+.certificate-article {
     margin: 0px 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;    
 }
-.abouts-list {
+.certifications-list, .certifications-list {
 list-style: none;
 }
-.abouts-container {
-    width: 100%;
+.certifications-container {
+    width: 80%;
     padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.about-element {
+.website-img{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: auto;
+    align-self: center;
+}
+.certificate-element {
     padding: 15px 5%;
 }
-.about-btn {
+.certificate-btn {
     display: flex;
     align-items: center;
     background: #344563;
@@ -30,21 +40,22 @@ list-style: none;
 .fa-solid {
     padding-right: 10px;
 }
-.about {
+.certificate {
     padding: 5px 20px;
     margin: 0px; 
 }
-.about a{
+.certificate a{
     text-decoration: none;
-}
-.about a:hover{
-    text-decoration: underline;
-    font-size: 22px;
-}
-.about a:visited{
     color: #807e7e;
 }
-.about-text {
+.certificate a:hover{
+
+    font-size: 22px;
+}
+.certificate a:visited{
+    color: #807e7e;
+}
+.certificate-text {
     background: #0e2c6313;
     border-radius: 5px;
     padding: 20px 20px;
@@ -176,23 +187,23 @@ list-style: none;
 }
 
 @media screen and (max-width: 900px) {
-    .about-article {
+    .certificate-article {
         margin: 0px 80px;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;    
     }
-    .about-element {
+    .certificate-element {
         padding: 14px 4%;
     }
-    .about-btn, .btn {
+    .certificate-btn, .btn {
         font-size: 20px;
     }
-    .about-text, .content {
+    .certificate-text, .content {
         font-size: 18px;
     }
-    .about a:hover{
+    .certificate a:hover{
         font-size: 20px;
     }
     .project {
@@ -229,19 +240,19 @@ list-style: none;
     }
   }
   @media screen and (max-width: 700px) {
-    .about-article {
+    .certificate-article {
         margin: 0px 60px;    
     }
-    .about-element {
+    .certificate-element {
         padding: 13px 3%;
     }
-    .about-btn, .btn {
+    .certificate-btn, .btn {
         font-size: 16px;
     }
-    .about-text, .content{
+    .certificate-text, .content{
         font-size: 15px;
     }
-    .about a:hover{
+    .certificate a:hover{
         font-size: 18px;
     }
     .project-container {
@@ -253,19 +264,19 @@ list-style: none;
     }
   }
   @media screen and (max-width: 600px) {
-    .about-article {
+    .certificate-article {
         margin: 0px 40px;   
     }
-    .about-element {
+    .certificate-element {
         padding: 12px 2%;
     }
-    .about-btn, .btn {
+    .certificate-btn, .btn {
         font-size: 15px;
     }
-    .about-text, .content {
+    .certificate-text, .content {
         font-size: 14px;
     }
-    .about a:hover{
+    .certificate a:hover{
         font-size: 16px;
     }
     .project-container {
@@ -283,19 +294,19 @@ list-style: none;
     }
   }
   @media screen and (max-width: 500px) {
-    .about-article {
+    .certificate-article {
         margin: 0px 30px; 
     }
-    .about-element {
+    .certificate-element {
         padding: 11px 1%;
     }
-    .about-btn, .btn {
+    .certificate-btn, .btn {
         font-size: 13px;
     }
-    .about-text, .content {
+    .certificate-text, .content {
         font-size: 12px;
     }
-    .about a:hover{
+    .certificate a:hover{
         font-size: 14px;
     }
     .project-container {
@@ -311,19 +322,19 @@ list-style: none;
     }
   }
   @media screen and (max-width: 450px) {
-    .about-article {
+    .certificate-article {
         margin: 0px 20px; 
     }
-    .about-element {
+    .certificate-element {
         padding: 10px 0%;
     }
-    .about-btn, .btn {
+    .certificate-btn, .btn {
         font-size: 11px;
     }
-    .about-text, .content {
+    .certificate-text, .content {
         font-size: 10px;
     }
-    .about a:hover{
+    .certificate a:hover{
         font-size: 12px;
     }
     .project-container {

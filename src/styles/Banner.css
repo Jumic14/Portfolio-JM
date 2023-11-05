@@ -12,7 +12,7 @@
     position: absolute;
     align-self: center;
     z-index: 1;
-    font-size: 36px;
+    font-size: 54px;
     font-weight: 500;
     padding: 20px;
     letter-spacing: 0em;
@@ -48,7 +48,7 @@
   }
   @media screen and (max-width: 600px) {
     .banner-container {
-        margin: 20px 40px;
+        margin: 30px 40px;
         height: 158px;
     }
     .banner-txt {
@@ -57,7 +57,7 @@
   }
   @media screen and (max-width: 500px) {
     .banner-container {
-        margin: 15px 30px;
+        margin: 30px 30px;
         height: 135px;
     }
     .banner-txt {
@@ -66,10 +66,10 @@
   }
   @media screen and (max-width: 450px) {
     .banner-container {
-        margin: 10px 20px;
+        margin: 30px 20px;
         height: 111px;
     }
     .banner-txt {
-        font-size: 16px;
+        font-size: 20px;
     }
   }

@@ -1,4 +1,3 @@
-
 .home-container {
     width: 100%;
     display: flex;
@@ -107,6 +106,9 @@
     .stack, .tool {
         padding: 16px;
     }
+    .stack-img, .tool-img {
+        height: 40px;
+    }
   }
 @media screen and (max-width: 600px) {
     .home-introduction {
@@ -120,12 +122,14 @@
         font-size: 14px;
         padding: 38px;
     }
+    .skills, .tools {
+        font-size: 10px;
+    }
     .stack, .tool {
         padding: 14px;
     }
     .stack-img, .tool-img {
-        width: auto;
-        height: 40px;
+        height: 30px;
     }
   }
 @media screen and (max-width: 500px) {
@@ -145,8 +149,14 @@
     .skills-title, .tools-title {
         padding: 34px;
     }
+    .skills, .tools {
+        font-size: 8px;
+    }
     .stack, .tool {
         padding: 12px;
+    }
+    .stack-img, .tool-img {
+        height: 25px;
     }
   }
 @media screen and (max-width: 450px) {
@@ -162,13 +172,12 @@
         padding: 30px;
     }
     .skills, .tools {
-        font-size: 8px;
+        font-size: 6px;
     }
     .stack, .tool {
         padding: 10px;
     }
     .stack-img, .tool-img {
-        width: auto;
-        height: 30px;
+        height: 20px;
     }
   }

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import '../styles/Slideshow.css'
+import "../styles/Slideshow.css";
 
 const Slideshow = ({ slides }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -15,27 +15,24 @@ const Slideshow = ({ slides }) => {
   };
   const slidesImage = {
     backgroundImage: `url(${slides[currentIndex].url})`,
-  }; 
+  };
 
-  if (slides.length !==1) {
-  return (
-    <div className="sliderStyles">
-      <div>
-        <div onClick={goToPrevious} className="fa-solid fa-angle-left"></div>
-        <div onClick={goToNext} className="fa-solid fa-angle-right"></div>
+  if (slides.length !== 1) {
+    return (
+      <div className="sliderStyles">
+        <div>
+          <div onClick={goToPrevious} className="fa-solid fa-angle-left"></div>
+          <div onClick={goToNext} className="fa-solid fa-angle-right"></div>
+        </div>
+        <div style={slidesImage} className="slider"></div>
+        <div className="slideCount">
+          {currentIndex + 1}/{slides.length}
+        </div>
       </div>
-      <div style={slidesImage} className="slider"></div>
-      <div className="slideCount">
-            {currentIndex + 1}/{slides.length}
-      </div>
-    </div>
-  )
-}
-else {
-  return(
-    <div style={slidesImage} className="slider"></div>
-  )
-};
+    );
+  } else {
+    return <div style={slidesImage} className="slider"></div>;
+  }
 };
 
 export default Slideshow;
